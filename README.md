@@ -7,6 +7,12 @@ The final solution includes a fully functional web application built using Flask
 
 **link to visit webapp** - https://flight-fare-predictor-yie4.onrender.com
 
+**Notice on Prediction Delay**
+
+> Note: This app is hosted on Render's free tier, where the server goes into sleep mode after 15 minutes of inactivity.
+When you press the Submit button, the model may take 40–60 seconds to respond if the server is waking up from sleep.
+Please be patient — this delay occurs only on the first request after a period of inactivity. Subsequent responses will be much faster.
+
 **link to repository where model is deployed using render** - https://github.com/0Baljinder/model_deployment
 ## WebApp screenshots
 
