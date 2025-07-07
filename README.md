@@ -6,6 +6,13 @@ After comparing performance, XGBoost was found to perform slightly better than t
 The final solution includes a fully functional web application built using Flask and deployed on Render, allowing users to input flight details and receive a predicted fare in real-time.
 
 **link to visit webapp** - https://flight-fare-predictor-yie4.onrender.com
+
+**WebApp screenshots**
+
+![webapp screenshot](screenshots/Screenshot_2025-07-07-10-48-32-188_com.opera.browser.jpg) 
+![webapp screenshot](screenshots/Screenshot_2025-07-07-11-04-10-381_com.opera.browser.jpg)
+![webapp screenshot](screenshots/Screenshot_2025-07-07-11-03-30-398_com.opera.browser.jpg) 
+![webapp screenshot](screenshots/Screenshot_2025-07-07-10-48-32-188_com.opera.browser.jpg) 
 ---
 
 ## Dataset
