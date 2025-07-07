@@ -166,7 +166,7 @@ Users can now access a fully working web interface to test the flight fare predi
 
 If you'd like to explore the deployed version or test the setup on your own, you can check the deployment repo here:
 # Deployment Repository Link
-(Note: If this repo is private, others won't be able to view it unless you invite them or make it public.)
+
 
 
 ## Challenges & Limitations
