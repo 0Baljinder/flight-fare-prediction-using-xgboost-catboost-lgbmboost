@@ -17,7 +17,7 @@ The final solution includes a fully functional web application built using Flask
 
 ## Dataset
 
-* **Source**: Kaggle (Airfare Price Prediction)
+* **Source**: Kaggle (Airfare Price Prediction) 
 * **Total Samples**: `300,153`
 * The dataset consists of flight booking records with features such as Airline, Source City, Destination City, Departure Time, Arrival Time, Class, Stops, Duration, Days Left, and more.
 
