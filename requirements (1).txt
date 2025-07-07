@@ -9,3 +9,5 @@ lightgbm
 catboost
 scikit-optimize
 pathlib
+flask pyngrok
+joblib
