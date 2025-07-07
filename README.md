@@ -1,6 +1,9 @@
-# Flight Fare Price Prediction using xgboost catboost lgbmboost
+# Flight Fare Price Prediction using xgboost catboost lgbmboost and Web App Deployment
 
 This project focuses on predicting airline ticket prices based on various factors like airline, departure and arrival cities, class, duration, and more. We explored multiple machine learning models, from simple regression to advanced ensemble techniques like XGBoost, CatBoost, and LightGBM.
+After comparing performance, XGBoost was found to perform slightly better than the others, and was chosen as the final model for deployment.
+
+The final solution includes a fully functional web application built using Flask and deployed on Render, allowing users to input flight details and receive a predicted fare in real-time.
 
 ---
 
@@ -104,9 +107,64 @@ Note: XGBoost and CatBoost performed nearly identically. XGBoost had a slightly 
 
 ---
 
+## Model Deployment & Web App Integration
+
+> Note: When this repository was first created, it focused solely on model development, exploration, and performance testing. At that time, no deployment or web integration was included.
+Now, the project has been extended to include model deployment, and the first Colab notebook has been updated to:
+
+
+
+Create a pipeline for preprocessing + prediction at the end of the workflow
+
+Save the trained XGBoost model using joblib for deployment
+
+
+
+---
+
+## Local Testing with ngrok
+
+To test the trained model in a real-time user-facing environment before deploying it to the cloud, we created a simple Flask web application and tested it locally using ngrok.
+
+# What is ngrok?
+Ngrok creates a temporary public URL to expose your local server over the internet. It's especially useful for testing your app on multiple devices or sharing it with collaborators — without needing to deploy it right away.
+
+A separate Colab notebook (ngrok_testing_pipeline.ipynb) was created in this repo to demonstrate:
+
+Loading the saved model pipeline
+
+Setting up a basic Flask app
+
+Simulating how users would enter flight details via a form and get predictions
+
+
+
+
+---
+
+## Cloud Deployment with Render
+
+After local testing, we fully deployed the app to the cloud using Render, a modern platform for deploying web applications and APIs.
+
+Render allows GitHub integration, automatic dependency installation, HTTPS support, and process management.
+
+We used Flask + Gunicorn in production and Render handled all the backend hosting.
+
+Users can now access a fully working web interface to test the flight fare predictor in real-time.
+
+
+> Note: The Render deployment setup (HTML templates, Flask app, background image, etc.) is maintained in a separate GitHub repository, which contains only the deployment-related code. 
+
+
+If you'd like to explore the deployed version or test the setup on your own, you can check the deployment repo here:
+# Deployment Repository Link
+(Note: If this repo is private, others won't be able to view it unless you invite them or make it public.)
+
+
 ## Challenges & Limitations
 
 * Despite hyperparameter tuning attempts using Bayesian Optimization, the suggested hyperparameter combinations failed to outperform the default configuration
+* The CSS code for the deployment web app was created with the help of ChatGPT, as I currently don't have frontend development experience. However, this process helped me understand the importance of UI/UX in presenting models to users, and I plan to learn the CSS basics in the future to gain more control over styling.
 
 ---
 
