@@ -4,6 +4,7 @@ This project focuses on predicting airline ticket prices based on various factor
 After comparing performance, XGBoost was found to perform slightly better than the others, and was chosen as the final model for deployment.
 
 The final solution includes a fully functional web application built using Flask and deployed on Render, allowing users to input flight details and receive a predicted fare in real-time.
+
 **link to visit webapp** - https://flight-fare-predictor-yie4.onrender.com
 ---
 
